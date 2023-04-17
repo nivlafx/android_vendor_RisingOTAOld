@@ -1,0 +1,28 @@
+{
+  "response": [
+    {
+        "maintainer": "Alvin Francis (nivlafx)",
+        "oem": "Google",
+        "device": "Pixel 6 Pro",
+        "filename": "risingOS-v1.0-Atlantis-202304170421-raven-GAPPS-COMMUNITY-updateimages.zip",
+        "download": "https://sourceforge.net/projects/rising-pixel/files/raven/1.x/risingOS-v1.0-Atlantis-202304170421-raven-GAPPS-COMMUNITY-updateimages.zip/download",
+        "timestamp": 1681705237,
+        "md5": "e2aae1d58082b80d098bf3f310bf8065",
+        "sha256": "326c3b0578b689d35fb506c20b307aa36cbf02c0f7bf2dafedf066c4f6888264",
+        "size": 2576156153,
+        "version": "en.raven",
+        "buildtype": "Weekly",
+        "forum": "",
+        "gapps": "",
+        "firmware": "",
+        "modem": "",
+        "bootloader": "",
+        "recovery": "",
+        "paypal": "",
+        "telegram": "",
+        "dt": "https://github.com/nivlafx/android_device_google_raviole",
+        "common-dt": "",
+        "kernel": "https://github.com/nivlafx/android_kernel_google_gs101"
+    }
+  ]
+}

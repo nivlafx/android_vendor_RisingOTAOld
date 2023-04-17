@@ -1,0 +1,28 @@
+{
+  "response": [
+    {
+        "maintainer": "Alvin Francis (nivlafx)",
+        "oem": "Google",
+        "device": "Pixel 7",
+        "filename": "risingOS-v1.0-Atlantis-202304170404-panther-GAPPS-COMMUNITY-updateimages.zip",
+        "download": "https://sourceforge.net/projects/rising-pixel/files/panther/1.x/risingOS-v1.0-Atlantis-202304170404-panther-GAPPS-COMMUNITY-updateimages.zip/download",
+        "timestamp": 1681704254,
+        "md5": "2b7ec27845f8019b0aec54e478a24818",
+        "sha256": "ea998f1b6f6c95e0733bce182ef8cb4f315c81cc3608bdd06ad12d5c58f6a664",
+        "size": 2677289272,
+        "version": "panther.panther",
+        "buildtype": "Weekly",
+        "forum": "",
+        "gapps": "",
+        "firmware": "",
+        "modem": "",
+        "bootloader": "",
+        "recovery": "",
+        "paypal": "",
+        "telegram": "",
+        "dt": "https://github.com/nivlafx/android_device_google_pantah",
+        "common-dt": "",
+        "kernel": "https://github.com/nivlafx/android_kernel_google_gs201"
+    }
+  ]
+}
