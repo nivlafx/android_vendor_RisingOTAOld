@@ -3,11 +3,6 @@ Build type: Weekly
 Device: Pixel 7 (panther)
 Device maintainer: NivlaFX
 
-Highlights & Device Specific Changes:
-Build type: Weekly
-Device: Pixel 7 Pro (cheetah)
-Device maintainer: NivlaFX
-
 ====================
      04-16-2023
 ====================
