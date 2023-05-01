@@ -1,30 +1,44 @@
 Highlights & Device Specific Changes:
 Build type: Weekly
-Device: Pixel 7 (panther)
+Device: Pixel 6a (bluejay)
 Device maintainer: NivlaFX
 
 ====================
      05-01-2023
 ====================
 
+   * device/google/bluejay
+2f8bc53 bluejay: Add more rising configs
+a1b879e bluejay: Update sysconfig
+3d6de9b bluejay: Add permissions config from stock OS
+496de9c bluejay: Add aggregated sysconfig xml with items from stock OS
+3703fa0 bluejay: Limit max visiblie notification icons to 3
+48873f1 bluejay: Enable and configure burn-in protection feature
+85667c6 bluejay: Add maintainer flag
+e4b3598 bluejay: Add stock fingerprint for PixelProps
+e3fc2ec bluejay: Update AOSP model & brand
 
    * build/make
 c8cfe13e2 Prop override for Attestation
 
-   * device/google/pantah
-ebda5ffa pantah: Add more rising configs
-7365277f pantah: Add more features to sysconfig
-ee27d9e0 pantah: Add vendor.google.google_battery to matrix
-3edbe96a Revert "pantah: Change some default values for statusbar paddings"
-20852836 pantah: Update sysconfig
-87749919 pantah: Add permissions config from stock OS
-dc6ff57b pantah: Add aggregated sysconfig xml with items from stock OS
-2128ec14 pantah: Limit max visiblie notification icons to 3
-834b7aa9 pantah: Limit max refresh rate for AOD/Ambient to 60hz
-dd20b300 pantah: Update power profile entries
-47b5d7f4 pantah: Enable refresh rate switch and qs tile
-e9b1f443 pantah: Enable and configure burn-in protection feature
-f0a08cf4 pantah: Enable Smart charging feature
+   * device/google/gs101
+7474ffe2 gs101: Add correct bluejay dalvik heap
+b2c39d33 gs101: Add vendor.google.google_battery to matrix
+0c90e11f SF: set debug.sf.frame_rate_multiple_threshold to 60 by default
+3d939e5f gs101: Address hbmsvm prop denial
+f8513ba7 gs101: Setup smart charging sepolicy for pixels
+92ede8a0 Revert "gs101: Give system_server access to charging nodes"
+0dc8d79d gs101: Enable battery stats defender
+5b5c6736 gs101: Reduce the frequency of swapping memory
+032df4da gs101: Source APNs from Pixel's CarrierSettings
+2edd446e gs101: Address selinux denials
+b6fc5ebc gs101: Cleanup dropbox on user reboot
+e61f26c9 gs101: Write final cpuset for audio-app cgroup
+8c055a50 gs101: Use CarrierSettings as carrier config package
+af1ba77c overlay: Settings: Enable multiple vibration strength levels
+faccc177 gs101: use more modern target CPU configuration
+30e3fd75 gs101: Update AiAi allowlist
+379ec2cd gs101: Inherit 8gb/12GB dalvik heap config from fw/natives
 
    * device/lineage/sepolicy
 9341a3d Remove turbo adapter sepolicy from lineage/sepolicy
@@ -48,30 +62,6 @@ af47369 Add write device config for gms
      04-30-2023
 ====================
 
-
-   * device/google/gs201
-20e5dc68 SF: set debug.sf.frame_rate_multiple_threshold to 60 by default
-2b2d47e2 gs201: Address hbmsvm prop denial
-b4e2ab2f gs201: Setup smart charging sepolicy for pixels
-cd697d82 Revert "gs201: Give system_server access to charging nodes"
-c3ed9e5a gs201: Enable battery stats defender
-f7bea717 gs201: Reduce the frequency of swapping memory
-f7c153cb gs201: Source APNs from Pixel's CarrierSettings
-0af8acac gs201: Address selinux denials
-216a99d4 gs201: Cleanup dropbox on user reboot
-ecb54464 gs201: Write final cpuset for audio-app cgroup
-2d7f868e gs201: Allow USB gadget hal to read `sysfs_extcon` files
-ab8b0102 gs201: Use CarrierSettings as carrier config package
-4e790a63 overlay: Settings: Enable multiple vibration strength levels
-37bc3329 gs201: use more modern target CPU configuration
-38ad245b gs201: Update AiAi allowlist
-50c8aef5 gs201: Inherit 8gb/12GB dalvik heap config from fw/natives
-
-   * device/google/pantah
-60521dde pantah: Add maintainer flag
-f3ead872 pantah: Change some default values for statusbar paddings
-d6b4054f pantah: Add stock fingerprint for PixelProps
-94d45e1a pantah: Change MODEL default AOSP name to real name
 
    * device/lineage/sepolicy
 22f336b fipup Add Flipendo SELinux policy.
@@ -140,10 +130,6 @@ a5d2edaec default to gesture navigation
 ====================
      04-23-2023
 ====================
-
-
-   * device/google/pantah
-17096edb pantah: Enable apk fs-verity
 
    * packages/apps/ThemePicker
 dc064c24 Rearrange Theme Icons & Lock Screen affordances

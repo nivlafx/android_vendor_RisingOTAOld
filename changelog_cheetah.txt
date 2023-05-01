@@ -4,87 +4,157 @@ Device: Pixel 7 Pro (cheetah)
 Device maintainer: NivlaFX
 
 ====================
-     04-16-2023
+     05-01-2023
 ====================
 
+
    * build/make
-c9ef9aa94 Squash: build: build changelog [1/2]
-f6c73e633 Revert "core: Use 0 compression when creating the target_files package"
-
-   * device/google/gs101
-9654cf21 Remove Wi-Fi RSSI threshold overlays
-bd56abf3 config: Disable post-illumination UDFPS scanning delay
-73589166 Disable CMA migration failure debugging
-0e580d84 Merge tag 'android-13.0.0_r41' into thirteen
-ae9ca9af gs101: Allow USB gadget hal to read `sysfs_extcon` files
-281751d1 gs101: Restore correct usb config during early boot
-23194506 gs101: Enable updatable apexes
-8788a117 config: Enable increased touch sensitivity setting
-c28aaf28 gs101: Disable offending artifact checks
-6abf54b4 gs101: Give system_server access to charging nodes
-419b0c62 gs101: Change gpu_prebuild to google_devices
-765198d2 init: add permission for charging_policy access
-fc09fe3f gs201: Pin surfaceflinger threads to system-bg
-34194577 sepolicy: fix certs with adevtool
-a70f818b Set BOARD_USES_VENDOR_DLKMIMAGE
-
-   * device/google/gs201
-1ae27a17 Update IWLAN config with IMS changes in gs201
-fcdd667b gs201: Give system_server access to charging nodes
-2a1a42e4 gs201: Disable offending artifact checks
-25b724a4 config: Enable increased touch sensitivity setting
-3f20ca52 gs201: Enable updatable apexes
-9b6448dd gs201: Restore correct usb config during early boot
-81a8d513 Disable CMA migration failure debugging
-434ff41b config: Disable post-illumination UDFPS scanning delay
-502f4a08 Merge tag 'android-13.0.0_r41' into thirteen
+c8cfe13e2 Prop override for Attestation
 
    * device/google/pantah
-a88eeb6 Update fingerprint/build description from TQ2A.230405.003.E1
-66617a7 Merge tag 'android-13.0.0_r41' into thirteen
-5248305 Add configs according to rising source.
-40aee45 Add FaceUnlock permission
-a2da23f Switch to google_devices vendor
-68c7630 pantah: Override rising system properties
-8b845dd Gapps as default
-
-   * device/google/raviole
-fd911e6 Update fingerprint/build description from TQ2A.230405.003.E1
-6983336 Merge tag 'android-13.0.0_r41' into branch
-aafdb5e raviole: Adjust according to p7/P7 Pro dimens
-5db76c5 raviole: Enable Smart charging feature
-a8830de panther: Tune statusbar start & end padding
-6c0937c raviole: Add configs according to rising source.
-38fd89f raviole: Switch to google_devices vendor
-b0cf6ca raviole: Override rising system properties
-3b02eec raviole: Gapps as default
+ebda5ffa pantah: Add more rising configs
+7365277f pantah: Add more features to sysconfig
+ee27d9e0 pantah: Add vendor.google.google_battery to matrix
+3edbe96a Revert "pantah: Change some default values for statusbar paddings"
+20852836 pantah: Update sysconfig
+87749919 pantah: Add permissions config from stock OS
+dc6ff57b pantah: Add aggregated sysconfig xml with items from stock OS
+2128ec14 pantah: Limit max visiblie notification icons to 3
+834b7aa9 pantah: Limit max refresh rate for AOD/Ambient to 60hz
+dd20b300 pantah: Update power profile entries
+47b5d7f4 pantah: Enable refresh rate switch and qs tile
+e9b1f443 pantah: Enable and configure burn-in protection feature
+f0a08cf4 pantah: Enable Smart charging feature
 
    * device/lineage/sepolicy
-7253124 fipup Add Flipendo SELinux policy.
+9341a3d Remove turbo adapter sepolicy from lineage/sepolicy
 
-   * kernel/google/gs101/private/gs-google
-77906caabde6 LTO Clang FULL to THIN
-
-   * kernel/google/gs201/private/gs-google
-e490b0166c6f LTO Full to Thin
+   * hardware/google/pixel-sepolicy
+b2c9294 Allow turbo adapter to find
 
    * packages/apps/Personalizations
-dba9ea2 default photos spoof to false
+4429590 default lockscreen/qs omni weather to hidden
 
-   * packages/apps/Settings
-a0d18d66998 Add back safety center
-743b6dfb510 Settings: Create face confirmation activity
-9ef30d8081e Settings: Create a ActivityDirector to optionally use SettingsGoogleFutureFaceEnroll
-
-   * vendor/google_devices/raven
-a32453e Add factoryota permission config
+   * vendor/gms
+70d5811 Adjust to rising source
+040f3a3 Add some more overlays
+48b35db gms: Update permissions
+af47369 Add write device config for gms
 
    * vendor/lineage
-4f38c564 Enable pixel audio by default
-070efeb2 Add pixel audio files and make it configurable
-264b283f statix: Enable the new Privacy Hub for everyone
-40851709 lineage: Enable smart actions in the clipboard overlay
-b3c9e689 lineage: Enable smart actions in the clipboard overlay
-1d06b0da lineage: adapt Changelog handling in Makefile [2/2]
-d34fdc68 apn: Update Imobile (APUA inet)
-5a0d55bc tools: Changelogs for risingOS v1.0
+3113d4155 Add Fingerprint prop override
+
+====================
+     04-30-2023
+====================
+
+
+   * device/google/gs201
+20e5dc68 SF: set debug.sf.frame_rate_multiple_threshold to 60 by default
+2b2d47e2 gs201: Address hbmsvm prop denial
+b4e2ab2f gs201: Setup smart charging sepolicy for pixels
+cd697d82 Revert "gs201: Give system_server access to charging nodes"
+c3ed9e5a gs201: Enable battery stats defender
+f7bea717 gs201: Reduce the frequency of swapping memory
+f7c153cb gs201: Source APNs from Pixel's CarrierSettings
+0af8acac gs201: Address selinux denials
+216a99d4 gs201: Cleanup dropbox on user reboot
+ecb54464 gs201: Write final cpuset for audio-app cgroup
+2d7f868e gs201: Allow USB gadget hal to read `sysfs_extcon` files
+ab8b0102 gs201: Use CarrierSettings as carrier config package
+4e790a63 overlay: Settings: Enable multiple vibration strength levels
+37bc3329 gs201: use more modern target CPU configuration
+38ad245b gs201: Update AiAi allowlist
+50c8aef5 gs201: Inherit 8gb/12GB dalvik heap config from fw/natives
+
+   * device/google/pantah
+60521dde pantah: Add maintainer flag
+f3ead872 pantah: Change some default values for statusbar paddings
+d6b4054f pantah: Add stock fingerprint for PixelProps
+94d45e1a pantah: Change MODEL default AOSP name to real name
+
+   * device/lineage/sepolicy
+22f336b fipup Add Flipendo SELinux policy.
+
+   * frameworks/base
+d6b11be5515b Make safetynet pass & fixup props
+a4c51b8dec63 SystemUI: Make mKeyguardBottomArea public
+fee372d63010 Revert "Ambient Music Ticker - Allow to pulse on new tracks [1/2]"
+
+   * packages/apps/Launcher3
+3b3f3cfae8 Add google camera to hotseat
+
+   * packages/apps/Personalizations
+9b22a4a Add CreativeRaviole Telegram
+891d39f Remove ambient display strings
+
+   * packages/apps/ThemePicker
+85fea860 ThemePicker: Remove beta tag for themed icons
+
+   * vendor/lineage
+943290637 Add SettingsGoogle overlay
+86e3e3b89 Change from lineage default QR to GMS
+
+   * vendor/pixel-framework
+493f80a update FeatureFactory
+c30b646 Updates to phenotypeproxy
+
+====================
+     04-29-2023
+====================
+
+   * vendor/pixel-framework
+e5b6577 Fix clear calling
+
+====================
+     04-27-2023
+====================
+
+   * packages/apps/Settings
+7e2e4ea1772 Settings: Import SettingsGoogle-lib as static_libs
+ba80460c6e8 Settings: Add back safety center
+
+   * vendor/lineage
+e6142eb91 Update googlecamera icon
+b421d47c5 Update to clear calling overlay
+bdfefed72 Implement ClearCalliingOverlay
+
+====================
+     04-26-2023
+====================
+
+   * vendor/pixel-framework
+e907112 Reconfigure for RisingOS
+8750452 Revert "pixel-framework: Remove Google Elmyra"
+
+====================
+     04-25-2023
+====================
+
+   * vendor/lineage
+5a4ce98e2 Add pixel-framework support
+929d053bf default CORE to false
+b69fa02c5 Import some custom Launcher3 icons
+a5d2edaec default to gesture navigation
+
+====================
+     04-23-2023
+====================
+
+
+   * device/google/pantah
+17096edb pantah: Enable apk fs-verity
+
+   * packages/apps/ThemePicker
+dc064c24 Rearrange Theme Icons & Lock Screen affordances
+64a228be Revert "ThemePicker: add support for custom themed icon pack [2/3]"
+
+   * vendor/gms
+9c6c015 overlay: Import google dialer overlay
+355c878 common: gms: Switch to product copy files instead of dex import
+a2923d9 common: Fix compatibility issues
+336fb61 gms: bye bye turbo (again)
+1bd2979 gms: Update from cheetah-tq2a.230405.003.e1-factory-1f04869e
+
+   * vendor/lineage
+e789d208d config: Import Common GMS properties
