@@ -1,0 +1,28 @@
+{
+  "response": [
+    {
+        "maintainer": "Alvin Francis (nivlafx)",
+        "oem": "Google",
+        "device": "Pixel 6",
+        "filename": "risingOS-v1.0-Atlantis-202305011347-oriole-GAPPS-COMMUNITY-updateimages.zip",
+        "download": "https://sourceforge.net/projects/rising-pixel/files/oriole/1.x/risingOS-v1.0-Atlantis-202305011347-oriole-GAPPS-COMMUNITY-updateimages.zip/download",
+        "timestamp": 1682948816,
+        "md5": "523f357f2f4a61899dd45eaf02aeb535",
+        "sha256": "44809902648a5c5fd78d0ec7c71f48bde6609fae469e0f97cc962e1ae2c9b907",
+        "size": 2417875988,
+        "version": "oriole.oriole",
+        "buildtype": "Weekly",
+        "forum": "",
+        "gapps": "",
+        "firmware": "",
+        "modem": "",
+        "bootloader": "",
+        "recovery": "",
+        "paypal": "",
+        "telegram": "",
+        "dt": "https://github.com/nivlafx/android_device_google_raviole",
+        "common-dt": "",
+        "kernel": "https://github.com/nivlafx/android_kernel_google_gs101"
+    }
+  ]
+}

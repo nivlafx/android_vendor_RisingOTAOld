@@ -1,0 +1,28 @@
+{
+  "response": [
+    {
+        "maintainer": "Alvin Francis (nivlafx)",
+        "oem": "Google",
+        "device": "Pixel 6a",
+        "filename": "risingOS-v1.0-Atlantis-202305011325-bluejay-GAPPS-COMMUNITY-updateimages.zip",
+        "download": "https://sourceforge.net/projects/rising-pixel/files/bluejay/1.x/risingOS-v1.0-Atlantis-202305011325-bluejay-GAPPS-COMMUNITY-updateimages.zip/download",
+        "timestamp": 1682947495,
+        "md5": "c5e16fa911b8bda44a90fc2156487c36",
+        "sha256": "02804f20409feb2aa2c423a22d2e14bd352886714853fe5b829fabffa2376a02",
+        "size": 2766191056,
+        "version": "bluejay.bluejay",
+        "buildtype": "Weekly",
+        "forum": "",
+        "gapps": "",
+        "firmware": "",
+        "modem": "",
+        "bootloader": "",
+        "recovery": "",
+        "paypal": "",
+        "telegram": "",
+        "dt": "https://github.com/nivlafx/android_device_google_bluejay",
+        "common-dt": "",
+        "kernel": "https://github.com/nivlafx/android_kernel_google_gs201"
+    }
+  ]
+}
