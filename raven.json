@@ -1,28 +1,28 @@
 {
-  "response": [
-    {
-        "maintainer": "Alvin Francis (nivlafx)",
-        "oem": "Google",
-        "device": "Pixel 6 Pro",
-        "filename": "risingOS-v1.0-Atlantis-202305011140-raven-GAPPS-COMMUNITY-updateimages.zip",
-        "download": "https://sourceforge.net/projects/rising-pixel/files/raven/1.x/risingOS-v1.0-Atlantis-202305011140-raven-GAPPS-COMMUNITY-updateimages.zip/download",
-        "timestamp": 1682941163,
-        "md5": "f62cb09d3924151883b54b6f6d9396c5",
-        "sha256": "c4b8a679f92b16a9f70bb760a81c5efa8e4e58e8ed7b665bfac4dfc3e5dde061",
-        "size": 2731575101,
-        "version": "en.raven",
-        "buildtype": "Weekly",
-        "forum": "",
-        "gapps": "",
-        "firmware": "",
-        "modem": "",
-        "bootloader": "",
-        "recovery": "",
-        "paypal": "",
-        "telegram": "",
-        "dt": "https://github.com/nivlafx/android_device_google_raviole",
-        "common-dt": "",
-        "kernel": "https://github.com/nivlafx/android_kernel_google_gs101"
-    }
-  ]
+	"response": [
+		{
+			"maintainer": "Alvin Francis (nivlafx)",
+			"oem": "Google",
+			"device": "Pixel 6 Pro",
+			"filename": "risingOS-v1.1-Babylon-202305061001-raven-GAPPS-COMMUNITY.zip",
+			"download": "https://sourceforge.net/projects/rising-pixel/files/OTA/raven/1.x/risingOS-v1.1-Babylon-202305061001-raven-GAPPS-COMMUNITY.zip/download",
+			"timestamp": 1683367231,
+			"md5": "fcb1164fa763348f0097ee1324f8fcee",
+			"sha256": "bed4ba74f76ce67b2d6b5ff8dcc43cb4ac2490620fe166ee3b24c58b16d354e8",
+			"size": 2243732470,
+			"version": "v1.1-Babylon",
+			"buildtype": "Weekly",
+			"forum": "https://forum.xda-developers.com/t/rom-13-raven-risingos-1-0-atlantis-aosp-gapps-unofficial.4499397/",
+			"gapps": "",
+			"firmware": "",
+			"modem": "",
+			"bootloader": "",
+			"recovery": "",
+			"paypal": "",
+			"telegram": "https://t.me/CreativeRaviole",
+			"dt": "https://github.com/nivlafx/android_device_google_raviole",
+			"common-dt": "",
+			"kernel": "https://github.com/nivlafx/android_kernel_google_gs101"
+		}
+	]
 }
